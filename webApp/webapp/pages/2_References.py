@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("Data Sources - from Submitted Markdown Scripts and Yahoo Finance")
-df = pd.read_csv("C:/Users/tomco/OneDrive - UNSW/2024/ACTL3182/Assignment/webApp/webappdata.csv", parse_dates=['Date'], index_col='Date')
+df = pd.read_csv("webappdata.csv", parse_dates=['Date'], index_col='Date')
 df.index = df.index.date
 st.dataframe(df)
 
